@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .show-modal{
+            margin: 2rem;
+        }
+        img{
+            width: 3rem;
+            
+        }
+        nav{
+            display: flex;
+        }
+        ul{
+            display: flex;
+             flex-direction: column;
+        }
+        li{
+            list-style: none;
+            margin: 1rem;
+        }
+        li a{
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+        .close-modal {
+          position: absolute;
+          top: 1.2rem;
+          right: 2rem;
+          font-size: 3rem;
+        color: #333;
+       cursor: pointer;
+       border: none;
+       background: none;
+}
+        .hidden{
+            display: none;
+        }
+        .modal{
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            width: 20%;
+            padding: 6rem;
+            border-radius: 5px;
+            box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+   /*     .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            background-color: whitesmoke;
+            z-index: 5;
+              }
+              */
+    </style>
+</head>
+<body>
+    <button class="show-modal"><img src="img/menu.png" alt="" srcset=""></button>
+
+    <div class="modal hidden">
+        <button class="
+        close-modal">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay hidden"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
